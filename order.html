@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-container {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 5%;
+    }
+    .order-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-border);
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gray-border);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 5px rgba(0, 168, 150, 0.2);
+    }
+    .btn-submit-order {
+      width: 100%;
+      padding: 0.85rem;
+      background-color: #25d366;
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 1rem;
+    }
+    .btn-submit-order:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR & DROPDOWN -->
+  <nav class="navbar">
+    <div class="logo">Pu<span>Fish</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#profil">Profil Toko</a></li>
+          <li><a href="#sejarah">Sejarah Toko</a></li>
+          <li><a href="#visimisi">Visi & Misi</a></li>
+          <li><a href="#tujuan">Tujuan Toko</a></li>
+        </ul>
+      </li>
+      <li><a href="catalog.html">Katalog</a></li>
+      <li><a href="order.html" class="active">Form Pemesanan</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- FORM PEMESANAN -->
+  <div class="order-container">
+    <h1 style="text-align: center; color: var(--primary); margin-bottom: 2rem; font-size: 2.2rem;">Formulir Pemesanan Ikan</h1>
+
+    <div class="order-card">
+      <form id="orderForm" onsubmit="sendOrderWhatsApp(event)">
+        
+        <div class="form-group">
+          <label for="nama">Nama Lengkap *</label>
+          <input type="text" id="nama" class="form-control" placeholder="Masukkan nama Anda..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">Nomor WhatsApp *</label>
+          <input type="tel" id="whatsapp" class="form-control" placeholder="Contoh: 081234567890" required>
+        </div>
+
+        <div class="form-group">
+          <label for="produk">Pilihan Ikan / Produk *</label>
+          <input type="text" id="produk" class="form-control" placeholder="Nama ikan yang ingin dipesan..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="jumlah">Jumlah (Ekor) *</label>
+          <input type="number" id="jumlah" class="form-control" value="1" min="1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat Pengiriman Lengkap *</label>
+          <textarea id="alamat" class="form-control" rows="3" placeholder="Jalan, No. Rumah, RT/RW, Kecamatan, Kota..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="catatan">Catatan Tambahan (Opsional)</label>
+          <textarea id="catatan" class="form-control" rows="2" placeholder="Contoh: Request ukuran ikan, jenis kelamin, atau packing khusus..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-order">Klik untuk pesan via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 PuFish.</p>
+    <p>Design By: Dharma Putra Maulana</p>
+    <p>Official Website: <a href="https://www.pufish.com" target="_blank">www.pufish.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pufish</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/koii.jpg">
+</head>
+<body>
+
+  <!-- NAVBAR & DROPDOWN -->
+  <nav class="navbar">
+    <div class="logo">Pu<span>Fish</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      
+      <!-- Dropdown Menu About -->
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#profil">Profil Toko</a></li>
+          <li><a href="#sejarah">Sejarah Toko</a></li>
+          <li><a href="#visimisi">Visi & Misi</a></li>
+          <li><a href="#tujuan">Tujuan Toko</a></li>
+        </ul>
+      </li>
+
+      <li><a href="catalog.html">Katalog</a></li>
+      <li><a href="order.html">Form Pemesanan</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER BANNER -->
+  <header class="header-banner">
+    <h1>Pusat Ikan Hias & Predator Terbesar No.1 Di Indonesia</h1>
+    <p>Klik dibawah untuk mencari ikan yang anda ingin.</p>
+    <a href="catalog.html" style="background: white; color: var(--primary); padding: 0.7rem 1.5rem; font-weight: 600; border-radius: var(--radius); display: inline-block;">Jelajahi Katalog</a>
+  </header>
+
+  <!-- KONTEN UTAMA & SIDEBAR -->
+  <div class="main-wrapper">
+    
+    <!-- KONTEN UTAMA (KIRI) -->
+    <div class="content-area">
+      
+      <!-- Profil Singkat Toko -->
+      <section class="widget" style="background: white; padding: 2rem;">
+        <h2 class="section-heading" style="margin-bottom: 0.8rem;">Selamat Datang di PuFish</h2>
+        <p style="margin-bottom: 1rem;">
+          PuFish merupakan sebuah toko & galeri ikan hias serta ikan predator terpercaya. Kami menyediakan berbagai spesies berkualitas tinggi yang dirawat dengan sepenuh hati.
+        </p>
+        <span style="display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">📢 Pengumuman: Diskon 10% untuk semua jenis Ikan Predator sampai 8 November 2026!</span>
+      </section>
+
+      <!-- Produk Unggulan (Square 1:1) -->
+      <section>
+        <h2 class="section-heading">Produk Unggulan</h2>
+        <div class="product-grid-home">
+          <!-- Produk 1 -->
+          <div class="product-card">
+            <img src="images/cupang.jpg" alt="Cupang Halfmoon" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Cupang Halfmoon</h3>
+              <p class="product-price">Rp 75.000</p>
+            </div>
+          </div>
+          <!-- Produk 2 -->
+          <div class="product-card">
+            <img src="images/Arowana fish.jpg" alt="Arwana red" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Arwana red</h3>
+              <p class="product-price">Rp 350.000</p>
+            </div>
+          </div>
+          <!-- Produk 3 -->
+          <div class="product-card">
+            <img src="images/Discus Fish.jpg" alt="Discus Red" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Discus Red Turquoise</h3>
+              <p class="product-price">Rp 250.000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 Postingan Artikel / Informasi Lembaga -->
+      <section>
+        <h2 class="section-heading">Artikel & Kegiatan Terbaru</h2>
+        
+        <!-- Artikel 1 -->
+        <article class="article-card">
+          <p class="article-date">7 Maret 2026 | Penulis: Dharma Putra Maulana</p>
+          <h3 class="article-title"><a href="article-1.html">Tips Perawatan Parameter Air untuk Ikan Discus Sensitif</a></h3>
+          <p style="font-size: 0.95rem; margin-top: 0.5rem;">
+            Ikan Discus memerlukan kestabilan suhu dan tingkat keasaman (pH) air tertentu agar warnanya tetap cerah dan terhindar dari penyakit stres...
+          </p>
+          <a href="article-1.html" class="btn-readmore">Read More</a>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article class="article-card">
+          <p class="article-date">5 Maret 2026 | Oleh: Dharma Putra Maulana</p>
+          <h3 class="article-title"><a href="article-2.html">Mengenal Karakteristik Ikan Predator Channa Marulioides</a></h3>
+          <p style="font-size: 0.95rem; margin-top: 0.5rem;">
+            Channa marulioides atau biasa dikenal dengan gabus hias memiliki corak bunga yang eksotis. Simak panduan pemberian pakan udang agar warna bar-nya tajam...
+          </p>
+          <a href="article-2.html" class="btn-readmore">Read More</a>
+        </article>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR (KANAN) -->
+    <aside class="sidebar">
+      
+      <!-- Profil Pemilik -->
+      <div class="widget owner-profile">
+        <img src="images/putra.jpeg" alt="Pemilik Toko" class="owner-img">
+        <h3 style="font-size: 1.1rem; color: var(--primary);">Dharma Putra M.</h3>
+        <p style="font-size: 0.85rem; margin-top: 4px;">Founder of PuFish</p>
+        <p style="font-size: 0.9rem; margin-top: 0.8rem; font-style: italic;">"Merawat dan membesarkan dengan sepenuh hati."</p>
+      </div>
+
+      <!-- Video YouTube -->
+      <div class="widget">
+        <h3 class="widget-title">Video Dokumentasi</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_LqUwfpLjg?si=jAmyER01f7jXv4P2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p style="font-size: 0.85rem; margin-top: 0.6rem; text-align: center;">Tutorial dasar merawat ikan hias dan predator.</p>
+      </div>
+
+      <!-- Statistik Pengunjung -->
+      <div class="widget">
+        <h3 class="widget-title">Statistik Pengunjung</h3>
+        <div class="stats-list">
+          <div class="stat-item">
+            <span>Hari Ini:</span>
+            <span class="stat-value">200 User</span>
+          </div>
+          <div class="stat-item">
+            <span>Bulan Ini:</span>
+            <span class="stat-value">2.500 User</span>
+          </div>
+          <div class="stat-item">
+            <span>Total Views:</span>
+            <span class="stat-value">80.000 Views</span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 PuFish.</p>
+    <p>Design By: Dharma Putra Maulana</p>
+    <p>Official Website: <a href="https://www.pufish.com" target="_blank">www.pufish.com</a></p>
+  </footer>
+
+</body>
+</html>

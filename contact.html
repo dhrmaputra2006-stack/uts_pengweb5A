@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 5%;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .contact-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-border);
+    }
+    .contact-card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 0.5rem;
+    }
+    .info-item {
+      margin-bottom: 1rem;
+    }
+    .info-item strong {
+      color: var(--dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR & DROPDOWN -->
+  <nav class="navbar">
+    <div class="logo">Pu<span>Fish</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#profil">Profil Toko</a></li>
+          <li><a href="#sejarah">Sejarah Toko</a></li>
+          <li><a href="#visimisi">Visi & Misi</a></li>
+          <li><a href="#tujuan">Tujuan Toko</a></li>
+        </ul>
+      </li>
+      <li><a href="catalog.html">Katalog</a></li>
+      <li><a href="order.html">Form Pemesanan</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- KONTEN KONTAK -->
+  <div class="contact-container">
+    <h1 style="text-align: center; color: var(--primary); margin-bottom: 2.5rem; font-size: 2.2rem;">Hubungi Tim Kami</h1>
+
+    <div class="contact-grid">
+      <!-- Info Pufish -->
+      <div class="contact-card">
+        <h3>Informasi Alamat & Operational</h3>
+        <div class="info-item">
+          <strong>Alamat Utama:</strong><br>
+          Jl. Kebayoran Lama. 32, Kota Jakarta Selatan, DKI Jakarta.
+        </div>
+        <div class="info-item">
+          <strong>Jam Operasional:</strong><br>
+          Senin - Minggu: 09.00 - 20.00 WIB
+        </div>
+        <div class="info-item">
+          <strong>Customer Service & WhatsApp:</strong><br>
+          +62 812-3456-7890
+        </div>
+        <div class="info-item">
+          <strong>Email Official:</strong><br>
+          info@pufish.com
+        </div>
+      </div>
+
+      <!-- Form Pertanyaan / Konsultasi -->
+      <div class="contact-card">
+        <h3>Konsultasi / Pertanyaan</h3>
+        <form onsubmit="handleContactMessage(event)">
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; margin-bottom:0.3rem; font-weight:600; font-size:0.9rem;">Nama Anda</label>
+            <input type="text" class="form-control" style="width:100%; padding:0.6rem; border:1px solid var(--gray-border); border-radius:var(--radius);" required>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; margin-bottom:0.3rem; font-weight:600; font-size:0.9rem;">Email / No. HP</label>
+            <input type="text" class="form-control" style="width:100%; padding:0.6rem; border:1px solid var(--gray-border); border-radius:var(--radius);" required>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; margin-bottom:0.3rem; font-weight:600; font-size:0.9rem;">Pesan / Pertanyaan</label>
+            <textarea style="width:100%; padding:0.6rem; border:1px solid var(--gray-border); border-radius:var(--radius);" rows="4" required></textarea>
+          </div>
+          <button type="submit" style="width:100%; padding:0.7rem; background:var(--primary); color:white; border:none; border-radius:var(--radius); font-weight:600; cursor:pointer;">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 PuFish.</p>
+    <p>Design By: Dharma Putra Maulana</p>
+    <p>Official Website: <a href="https://www.pufish.com" target="_blank">www.pufish.com</a></p>
+  </footer>
+
+  <script>
+    function handleContactMessage(e) {
+      e.preventDefault();
+      alert("Terima kasih! Pesan Anda telah terkirim ke customer service PuFish.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
